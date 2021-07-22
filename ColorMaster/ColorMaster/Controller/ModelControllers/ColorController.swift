@@ -15,7 +15,7 @@ enum ColorMatchResult {
 struct ColorController {
 
     static func generateTargetColor() -> Color {
-        var num: CGFloat { CGFloat( Int.random(in: (100...150)) ) }
+        var num: CGFloat { CGFloat( Int.random(in: (60...200)) ) }
         return Color(red: num, green: num, blue: num)
     }
     

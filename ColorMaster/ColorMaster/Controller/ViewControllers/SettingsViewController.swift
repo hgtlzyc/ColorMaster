@@ -31,7 +31,7 @@ class SettingsViewController: UIViewController {
     
     func updateViews() {
         variantSlider.minimumValue = 5
-        variantSlider.maximumValue = 100
+        variantSlider.maximumValue = 50
         variantSlider.value = Float(variantNumber)
         
         optionsSliderOutlet.minimumValue = 2
