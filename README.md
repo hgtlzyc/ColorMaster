@@ -1,13 +1,13 @@
 # ColorMaster
  
-![]()
+![](https://github.com/hgtlzyc/ColorMaster/blob/ad6c900f7d95c53ab39b07c909f9aa9d4dd37352/ScreenCapture.gif)
 
 Code snippet:
 ```swift
 struct ColorController {
 
     static func generateTargetColor() -> Color {
-        var num: CGFloat { CGFloat( Int.random(in: (100...150)) ) }
+        var num: CGFloat { CGFloat( Int.random(in: (60...200)) ) }
         return Color(red: num, green: num, blue: num)
     }
     
