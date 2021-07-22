@@ -28,7 +28,7 @@ class ColorCollectionViewController: UICollectionViewController {
         let options = wrongColors + [newTargetColor]
             
         colorCards.append([(newTargetColor,"Target")])
-        colorCards.append(options.map{ ($0, "?") })
+        colorCards.append(options.shuffled().map{ ($0, "?") })
         collectionView.reloadData()
     }
     
@@ -60,8 +60,8 @@ class ColorCollectionViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDelegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         guard indexPath.section != 1, let targetColor = targetColor else { return }
+        
         let isCorrect = colorCards[indexPath.section][indexPath.row].0 == targetColor
         presentResultAlert(isCorrect)
     }
