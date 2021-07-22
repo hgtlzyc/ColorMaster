@@ -1,6 +1,6 @@
 # ColorMaster
  
-![](https://github.com/hgtlzyc/ColorMaster/blob/a605faad31804997836c9c9d270110652b314dae/ScreenCapture.gif)
+![]()
 
 Code snippet:
 ```swift
@@ -28,7 +28,7 @@ struct ColorController {
         let options = wrongColors + [newTargetColor]
             
         colorCards.append([(newTargetColor,"Target")])
-        colorCards.append(options.map{ ($0, "?") })
+        colorCards.append(options.shuffled().map{ ($0, "?") })
         collectionView.reloadData()
     }
     
