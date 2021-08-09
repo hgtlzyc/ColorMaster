@@ -1,5 +1,6 @@
 # ColorMaster
- 
+ [Go To My Resume](https://github.com/hgtlzyc/Resume#color-master-github-repo)
+<br />
 ![](https://github.com/hgtlzyc/ColorMaster/blob/ad6c900f7d95c53ab39b07c909f9aa9d4dd37352/ScreenCapture.gif)
 
 Code snippet:
